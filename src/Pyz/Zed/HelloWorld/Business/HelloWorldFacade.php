@@ -21,4 +21,11 @@ class HelloWorldFacade extends AbstractFacade implements HelloWorldFacadeInterfa
             ->createStringReverser()
             ->reverseString($helloWorldTransfer);
     }
+
+    public function queryString(HelloWorldTransfer $helloWorldTransfer)
+    {
+        return $this->getFactory()
+            ->createStringReader()
+            ->readString(1);
+    }
 }

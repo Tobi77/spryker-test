@@ -24,4 +24,11 @@ class HelloWorldClient extends AbstractClient implements HelloWorldClientInterfa
             ->createZedHelloWorldStub()
             ->reverseString($helloWorldTransfer);
     }
+
+    public function queryString(HelloWorldTransfer $helloWorldTransfer)
+    {
+        return $this->getFactory()
+            ->createZedHelloWorldStub()
+            ->queryString($helloWorldTransfer);
+    }
 }

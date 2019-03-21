@@ -20,6 +20,5 @@ class IndexController extends AbstractController
         $reversedString = $this->getFacade()->reverseString($helloWorldTransfer);
 
         return ['data' => $reversedString];
-
     }
 }

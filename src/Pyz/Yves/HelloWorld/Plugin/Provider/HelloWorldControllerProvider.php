@@ -18,6 +18,7 @@ class HelloWorldControllerProvider extends AbstractYvesControllerProvider
     protected function defineControllers(Application $app)
     {
         $this->createGetController('/hello-world', static::HELLOWORLD_INDEX, 'HelloWorld', 'Index', 'index');
+        $this->createGetController('/hello-world-db', static::HELLOWORLD_INDEX.'db', 'HelloWorld', 'Index', 'indexDatabase');
     }
 
 }

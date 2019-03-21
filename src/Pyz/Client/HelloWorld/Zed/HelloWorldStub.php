@@ -17,4 +17,16 @@ class HelloWorldStub extends ZedRequestStub implements HelloWorldStubInterface
             $helloWorldTransfer
         );
     }
+
+    /**
+     * @param HelloWorldTransfer $helloWorldTransfer
+     * @return \Spryker\Shared\Kernel\Transfer\TransferInterface
+     */
+    public function queryString(HelloWorldTransfer $helloWorldTransfer)
+    {
+        return $this->zedStub->call(
+            '/hello-world/gateway/query-string',
+            $helloWorldTransfer
+        );
+    }
 }
