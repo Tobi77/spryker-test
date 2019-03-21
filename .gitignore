@@ -1,0 +1,12 @@
+/*
+
+!/.gitignore
+!/README.md
+
+!/src/Pyz/Yves/HelloWorld
+!/src/Pyz/Yves/HelloWorld/*
+!/src/Pyz/Yves/ShopApplication/
+!/src/Pyz/Yves/ShopApplication/*
+
+!/src/Pyz/Zed/HelloWorld/
+!/src/Pyz/Zed/HelloWorld/*

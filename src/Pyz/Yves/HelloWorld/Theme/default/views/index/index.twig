@@ -1,0 +1,17 @@
+{# src/Pyz/Yves/HelloWorld/Theme/default/views/index/index.twig #}
+
+{% extends template('page-layout-main') %}
+
+{% define data = {
+    helloWorld: _view.helloWorld
+} %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>Hello Tobi, whats up!</h2>
+            <h3>{{ data.helloWorld }}</h3>
+        </div>
+    </div>
+{% endblock %}
