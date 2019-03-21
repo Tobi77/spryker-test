@@ -3,15 +3,14 @@
 {% extends template('page-layout-main') %}
 
 {% define data = {
-    helloWorld: _view.helloWorld
+    reversedString: _view.reversedString
 } %}
-
 
 {% block content %}
     <div class="row">
         <div class="small-12 columns">
             <h2>Hello Tobi, whats up!</h2>
-            <h3>{{ data.helloWorld }}</h3>
+            <h3>{{ data.reversedString }}</h3>
         </div>
     </div>
 {% endblock %}

@@ -1,9 +1,10 @@
 <?php
-namespace Pyz\Zed\HelloWorld\Business;
+
+namespace Pyz\Client\HelloWorld;
 
 use Generated\Shared\Transfer\HelloWorldTransfer;
 
-interface HelloWorldFacadeInterface
+interface HelloWorldClientInterface
 {
     public function reverseString(HelloWorldTransfer $helloWorldTransfer);
 }

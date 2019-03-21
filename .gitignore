@@ -3,6 +3,12 @@
 !/.gitignore
 !/README.md
 
+!/src/Pyz/Client/HelloWorld
+!/src/Pyz/Client/HelloWorld/*
+
+!/src/Pyz/Shared/HelloWorld
+!/src/Pyz/Shared/HelloWorld/*
+
 !/src/Pyz/Yves/HelloWorld
 !/src/Pyz/Yves/HelloWorld/*
 !/src/Pyz/Yves/ShopApplication/

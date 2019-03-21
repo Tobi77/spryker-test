@@ -1,6 +1,7 @@
 <?php
 namespace Pyz\Zed\HelloWorld\Business;
 
+use Generated\Shared\Transfer\HelloWorldTransfer;
 use Spryker\Zed\Kernel\Business\AbstractFacade;
 
 /**
@@ -10,11 +11,14 @@ use Spryker\Zed\Kernel\Business\AbstractFacade;
  */
 class HelloWorldFacade extends AbstractFacade implements HelloWorldFacadeInterface
 {
-
-    public function reverseString($originalString)
+    /**
+     * @param HelloWorldTransfer $helloWorldTransfer
+     * @return string
+     */
+    public function reverseString(HelloWorldTransfer $helloWorldTransfer)
     {
         return $this->getFactory()
             ->createStringReverser()
-            ->reverseString($originalString);
+            ->reverseString($helloWorldTransfer);
     }
 }

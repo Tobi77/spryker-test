@@ -1,11 +1,19 @@
 <?php
 namespace Pyz\Zed\HelloWorld\Business\Model;
 
+use Generated\Shared\Transfer\HelloWorldTransfer;
+
 class StringReverser
 {
-    public function reverseString($originalString)
+    /**
+     * @param HelloWorldTransfer $helloWorldTransfer
+     * @return HelloWorldTransfer
+     */
+    public function reverseString(HelloWorldTransfer $helloWorldTransfer)
     {
-        $reversedString = strrev($originalString);
-        return $reversedString;
+        $reversedString = strrev($helloWorldTransfer->getOriginalString());
+        $helloWorldTransfer->setReversedString($reversedString);
+
+        return $helloWorldTransfer;
     }
 }
