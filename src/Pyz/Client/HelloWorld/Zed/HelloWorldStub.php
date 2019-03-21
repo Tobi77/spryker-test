@@ -8,6 +8,7 @@ class HelloWorldStub extends ZedRequestStub implements HelloWorldStubInterface
 {
     /**
      * @param HelloWorldTransfer $helloWorldTransfer
+     * @return \Spryker\Shared\Kernel\Transfer\TransferInterface
      */
     public function reverseString(HelloWorldTransfer $helloWorldTransfer)
     {

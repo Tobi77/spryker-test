@@ -13,7 +13,7 @@ class HelloWorldFacade extends AbstractFacade implements HelloWorldFacadeInterfa
 {
     /**
      * @param HelloWorldTransfer $helloWorldTransfer
-     * @return string
+     * @return HelloWorldTransfer
      */
     public function reverseString(HelloWorldTransfer $helloWorldTransfer)
     {
