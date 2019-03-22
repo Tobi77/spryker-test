@@ -28,3 +28,27 @@ Connection refused [tcp://127.0.0.1:10009]
     
     sudo service redis-server-development start
 
+
+
+# Livecycle
+
+Yves/Plugin/Provider
+via URL
+
+Yves/Controller
+
+getClient() > Client/Client
+
+getFactory > Client/Factory
+
+createStub > Client/Zed/Stub
+
+call > Zed/Communication/Controller/Gateway
+
+getFacade > Zed/Business/Facade
+
+getFactory > Zed/Business/Factory
+
+creteModel > Zerd/Business/Model/Xxxx
+
+
