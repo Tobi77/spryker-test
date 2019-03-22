@@ -10,6 +10,7 @@ namespace Pyz\Yves\ShopApplication;
 use Pyz\Yves\CartPage\Plugin\Provider\CartServiceProvider;
 use Pyz\Yves\ExampleProductSalePage\Plugin\Provider\ExampleProductSaleControllerProvider;
 use Pyz\Yves\HelloWorld\Plugin\Provider\HelloWorldControllerProvider;
+use Pyz\Yves\PersonalizedProduct\Plugin\Provider\PersonalizedProductControllerProvider;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
 use Silex\Provider\RememberMeServiceProvider;
@@ -204,6 +205,7 @@ class YvesBootstrap extends SprykerYvesBootstrap
             new AvailabilityNotificationWidgetControllerProvider($isSsl),
             new AvailabilityNotificationPageControllerProvider($isSsl),
             new HelloWorldControllerProvider($isSsl),
+            new PersonalizedProductControllerProvider($isSsl),
         ];
     }
 }

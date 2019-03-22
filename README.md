@@ -1,6 +1,6 @@
 # Spryker B2C Demo Shop
 
-
+10.10.0.234
 
 https://documentation.spryker.com/installation/installation-guide-b2c.htm#linux
 
