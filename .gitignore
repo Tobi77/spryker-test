@@ -6,11 +6,21 @@
 !/src/Pyz/Client/HelloWorld
 !/src/Pyz/Client/HelloWorld/*
 
+!/src/Pyz/Client/PersonalizedProduct
+!/src/Pyz/Client/PersonalizedProduct/*
+
+!/src/Pyz/Shared/Cms/Theme/default/templates/my-offers
+!/src/Pyz/Shared/Cms/Theme/default/templates/my-offers/*
+
 !/src/Pyz/Shared/HelloWorld
 !/src/Pyz/Shared/HelloWorld/*
 
 !/src/Pyz/Yves/HelloWorld
 !/src/Pyz/Yves/HelloWorld/*
+
+!/src/Pyz/Yves/PersonalizedProduct
+!/src/Pyz/Yves/PersonalizedProduct/*
+
 !/src/Pyz/Yves/ShopApplication/
 !/src/Pyz/Yves/ShopApplication/*
 
