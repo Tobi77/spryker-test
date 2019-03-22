@@ -6,6 +6,9 @@
 !/src/Pyz/Client/HelloWorld
 !/src/Pyz/Client/HelloWorld/*
 
+!/src/Pyz/Client/Catalog
+!/src/Pyz/Client/Catalog/*
+
 !/src/Pyz/Client/PersonalizedProduct
 !/src/Pyz/Client/PersonalizedProduct/*
 
