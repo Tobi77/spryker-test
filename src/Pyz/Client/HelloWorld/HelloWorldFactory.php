@@ -21,7 +21,6 @@ class HelloWorldFactory extends AbstractFactory
     }
 
     /**
-     *
      * @return \Spryker\Client\ZedRequest\ZedRequestClientInterface
      */
     public function getZedRequestClient()
