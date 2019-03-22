@@ -17,12 +17,14 @@ class GatewayController extends AbstractGatewayController
      */
     public function reverseStringAction(HelloWorldTransfer $helloWorldTransfer)
     {
-        return $this->getFacade()->reverseString($helloWorldTransfer);
+        return $this->getFacade()
+            ->reverseString($helloWorldTransfer);
     }
 
-    public function queryStringAction(HelloWorldTransfer $helloWorldTransfer)
+    public function queryStringAction()
     {
-        return $this->getFacade()->queryString($helloWorldTransfer);
+        return $this->getFacade()
+            ->readString(3);
     }
 }
 

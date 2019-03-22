@@ -22,10 +22,14 @@ class HelloWorldFacade extends AbstractFacade implements HelloWorldFacadeInterfa
             ->reverseString($helloWorldTransfer);
     }
 
-    public function queryString(HelloWorldTransfer $helloWorldTransfer)
+    /**
+     * @param int $id
+     * @return HelloWorldTransfer
+     */
+    public function readString($id)
     {
         return $this->getFactory()
             ->createStringReader()
-            ->readString(3);
+            ->readString($id);
     }
 }

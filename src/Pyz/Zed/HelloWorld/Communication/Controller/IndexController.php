@@ -12,13 +12,17 @@ class IndexController extends AbstractController
 {
     public function indexAction(Request $request)
     {
-        $originalString = 'Hello World!';
+        // ## Inline ##
+        //$originalString = 'Hello World!';
 
-        $helloWorldTransfer = new HelloWorldTransfer();
-        $helloWorldTransfer->setOriginalString($originalString);
+        //$helloWorldTransfer = new HelloWorldTransfer();
+        //$helloWorldTransfer->setOriginalString($originalString);
 
-        $reversedString = $this->getFacade()->reverseString($helloWorldTransfer);
+        //$reversedString = $this->getFacade()->reverseString($helloWorldTransfer);
+        // ## Inline ##
 
-        return ['data' => $reversedString];
+        $helloWorldTransfer = $this->getFacade()->readString(3);
+
+        return ['data' => $helloWorldTransfer->getReversedString()];
     }
 }
