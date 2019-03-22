@@ -15,6 +15,8 @@ class StringReverser
         $reversedString = strrev($helloWorldTransfer->getOriginalString());
         $helloWorldTransfer->setReversedString($reversedString);
 
+        $this->saveReversedString($helloWorldTransfer);
+
         return $helloWorldTransfer;
     }
 
@@ -25,6 +27,7 @@ class StringReverser
     protected function saveReversedString(HelloWorldTransfer $helloWorldTransfer)
     {
         $helloWorldEntity = new PyzHelloWorld();
+
         $helloWorldEntity->setReversedString($helloWorldTransfer->getReversedString())->save();
     }
 }

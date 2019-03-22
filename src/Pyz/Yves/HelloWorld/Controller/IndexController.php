@@ -46,8 +46,8 @@ class IndexController extends AbstractController
         $helloWorldTransfer = new HelloWorldTransfer();
 
         // ### BEGIN Value ###
-        $helloWorldTransfer->setOriginalString('Hello, this content comes from Zed!');
-        $helloWorldTransfer = $this->getClient()->reverseString($helloWorldTransfer);
+        //$helloWorldTransfer->setOriginalString('Hello, this content comes from Zed!');
+        //$helloWorldTransfer = $this->getClient()->reverseString($helloWorldTransfer);
         // ### END Value ###
 
         // ### BEGIN Database ###

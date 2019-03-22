@@ -4,12 +4,12 @@
 
 https://documentation.spryker.com/installation/installation-guide-b2c.htm#linux
 
+    
+    VM_PROJECT=b2c-demo-shop SPRYKER_REPOSITORY="https://github.com/spryker-shop/b2c-demo-shop.git" vagrant up
 
-VM_PROJECT=b2c-demo-shop SPRYKER_REPOSITORY="https://github.com/spryker-shop/b2c-demo-shop.git" vagrant up
 
 
-
-Links:
+## Links
 
 Spryker Training:
 https://spryker-training.thinkific.com/users/sign_in
@@ -19,3 +19,12 @@ http://www.de.b2c-demo-shop.local
 
 BE:
 http://zed.de.b2c-demo-shop.local/
+
+
+## Troubleshooting
+https://documentation.spryker.com/installation/troubleshooting.htm
+
+Connection refused [tcp://127.0.0.1:10009]
+    
+    sudo service redis-server-development start
+

@@ -26,6 +26,6 @@ class HelloWorldFacade extends AbstractFacade implements HelloWorldFacadeInterfa
     {
         return $this->getFactory()
             ->createStringReader()
-            ->readString(1);
+            ->readString(3);
     }
 }
