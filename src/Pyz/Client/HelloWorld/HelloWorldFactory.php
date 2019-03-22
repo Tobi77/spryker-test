@@ -1,16 +1,19 @@
 <?php
 
+/**
+ * This file is part of the Spryker Commerce OS.
+ * For full license information, please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace Pyz\Client\HelloWorld;
 
 use Pyz\Client\HelloWorld\Zed\HelloWorldStub;
-use Pyz\Client\HelloWorld\Zed\HelloWorldStubInterface;
 use Spryker\Client\Kernel\AbstractFactory;
 
 class HelloWorldFactory extends AbstractFactory
 {
     /**
-     * @return HelloWorldStubInterface
-     * @throws \Spryker\Client\Kernel\Exception\Container\ContainerKeyNotFoundException
+     * @return \Pyz\Client\HelloWorld\Zed\HelloWorldStubInterface
      */
     public function createZedHelloWorldStub()
     {
@@ -18,8 +21,8 @@ class HelloWorldFactory extends AbstractFactory
     }
 
     /**
+     *
      * @return \Spryker\Client\ZedRequest\ZedRequestClientInterface
-     * @throws \Spryker\Client\Kernel\Exception\Container\ContainerKeyNotFoundException
      */
     public function getZedRequestClient()
     {

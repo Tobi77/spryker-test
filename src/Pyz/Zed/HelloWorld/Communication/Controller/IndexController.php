@@ -1,12 +1,18 @@
 <?php
+
+/**
+ * This file is part of the Spryker Commerce OS.
+ * For full license information, please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace Pyz\Zed\HelloWorld\Communication\Controller;
 
-use Generated\Shared\Transfer\HelloWorldTransfer;
 use Spryker\Zed\Kernel\Communication\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @method \Pyz\Zed\HelloWorld\Business\HelloWorldFacadeInterface getFacade()
+ * @method \Pyz\Zed\HelloWorld\Persistence\HelloWorldQueryContainerInterface getQueryContainer()
  */
 class IndexController extends AbstractController
 {

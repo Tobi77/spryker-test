@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * This file is part of the Spryker Commerce OS.
+ * For full license information, please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace Pyz\Zed\HelloWorld\Business\Model;
 
 use Generated\Shared\Transfer\HelloWorldTransfer;
@@ -7,8 +13,9 @@ use Orm\Zed\HelloWorld\Persistence\PyzHelloWorld;
 class StringReverser
 {
     /**
-     * @param HelloWorldTransfer $helloWorldTransfer
-     * @return HelloWorldTransfer
+     * @param \Generated\Shared\Transfer\HelloWorldTransfer $helloWorldTransfer
+     *
+     * @return \Generated\Shared\Transfer\HelloWorldTransfer
      */
     public function reverseString(HelloWorldTransfer $helloWorldTransfer)
     {
@@ -21,8 +28,9 @@ class StringReverser
     }
 
     /**
-     * @param HelloWorldTransfer $helloWorldTransfer
-     * @throws \Propel\Runtime\Exception\PropelException
+     * @param \Generated\Shared\Transfer\HelloWorldTransfer $helloWorldTransfer
+     *
+     * @return void
      */
     protected function saveReversedString(HelloWorldTransfer $helloWorldTransfer)
     {

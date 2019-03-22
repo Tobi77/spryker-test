@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * This file is part of the Spryker Commerce OS.
+ * For full license information, please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace Pyz\Yves\HelloWorld\Controller;
 
 use Generated\Shared\Transfer\HelloWorldTransfer;
@@ -12,7 +17,6 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class IndexController extends AbstractController
 {
-
     /**
      * @param \Symfony\Component\HttpFoundation\Request $request
      *
@@ -20,7 +24,7 @@ class IndexController extends AbstractController
      */
     public function indexAction(Request $request)
     {
-        /** @var HelloWorldTransfer $helloWorldTransfer */
+        /** @var \Generated\Shared\Transfer\HelloWorldTransfer $helloWorldTransfer */
         $helloWorldTransfer = new HelloWorldTransfer();
         $helloWorldTransfer->setOriginalString('Hello, this content comes from Zed!');
 
@@ -42,7 +46,7 @@ class IndexController extends AbstractController
      */
     public function indexDatabaseAction(Request $request)
     {
-        /** @var HelloWorldTransfer $helloWorldTransfer */
+        /** @var \Generated\Shared\Transfer\HelloWorldTransfer $helloWorldTransfer */
         $helloWorldTransfer = new HelloWorldTransfer();
 
         // ### BEGIN Value ###

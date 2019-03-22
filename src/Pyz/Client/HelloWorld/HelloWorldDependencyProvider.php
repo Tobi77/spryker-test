@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * This file is part of the Spryker Commerce OS.
+ * For full license information, please view the LICENSE file that was distributed with this source code.
+ */
+
 namespace Pyz\Client\HelloWorld;
 
 use Spryker\Client\Kernel\AbstractDependencyProvider;
@@ -6,11 +12,12 @@ use Spryker\Client\Kernel\Container;
 
 class HelloWorldDependencyProvider extends AbstractDependencyProvider
 {
-    const CLIENT_ZED_REQUEST = 'CLIENT_ZED_REQUEST';
+    public const CLIENT_ZED_REQUEST = 'CLIENT_ZED_REQUEST';
 
     /**
-     * @param Container $container
-     * @return Container
+     * @param \Spryker\Client\Kernel\Container $container
+     *
+     * @return \Spryker\Client\Kernel\Container
      */
     public function provideServiceLayerDependencies(Container $container)
     {
@@ -20,8 +27,9 @@ class HelloWorldDependencyProvider extends AbstractDependencyProvider
     }
 
     /**
-     * @param Container $container
-     * @return Container
+     * @param \Spryker\Client\Kernel\Container $container
+     *
+     * @return \Spryker\Client\Kernel\Container
      */
     public function addZedRequestClient(Container $container)
     {
