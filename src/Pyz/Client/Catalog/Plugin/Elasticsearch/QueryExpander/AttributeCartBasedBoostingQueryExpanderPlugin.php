@@ -33,7 +33,7 @@ class AttributeCartBasedBoostingQueryExpanderPlugin extends AbstractPlugin imple
             ->getCartClient()
             ->getQuote();
 
-        //Don't neet to change query when cart is empty
+        //Don't need to change query when cart is empty
         if (!$quoteTransfer->getItems()->count()) {
             return $searchQuery;
         }
