@@ -4,6 +4,10 @@
 !/README.md
 
 !/config/Shared/config_default.php
+!/config/Shared/config_default-development_DEMO.php
+!/config/Shared/config_default_DEMO.php
+!/config/Shared/stores.php
+
 !/config/Zed/oms
 !/config/Zed/oms/*
 
@@ -30,6 +34,12 @@
 
 !/src/Pyz/Yves/ShopApplication/
 !/src/Pyz/Yves/ShopApplication/*
+
+!/src/Pyz/Zed/Application/
+!/src/Pyz/Zed/Application/*
+
+!/src/Pyz/Zed/ApplicationDEMO/
+!/src/Pyz/Zed/ApplicationDEMO/*
 
 !/src/Pyz/Zed/HelloWorld/
 !/src/Pyz/Zed/HelloWorld/*
