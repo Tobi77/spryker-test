@@ -22,7 +22,7 @@ class StringReverser
         $reversedString = strrev($helloWorldTransfer->getOriginalString());
         $helloWorldTransfer->setReversedString($reversedString);
 
-        $this->saveReversedString($helloWorldTransfer);
+        //$this->saveReversedString($helloWorldTransfer);
 
         return $helloWorldTransfer;
     }

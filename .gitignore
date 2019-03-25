@@ -46,3 +46,10 @@
 
 !/src/Pyz/Zed/Oms/
 !/src/Pyz/Zed/Oms/*
+
+!/tests/_data
+!/tests/_data/*
+
+!/tests/PyzTest/Zed/HelloWorld/codeception.yml
+!/tests/PyzTest/Zed/HelloWorld/Business
+!/tests/PyzTest/Zed/HelloWorld/Business/*
