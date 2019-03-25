@@ -15,6 +15,7 @@ class IndexController extends SprykerIndexController
      */
     public function indexAction()
     {
-        return 'Hello DE Store!';
+        parent::indexAction();
+        //return 'Hello DE Store!';
     }
 }
